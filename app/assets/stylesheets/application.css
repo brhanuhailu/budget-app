@@ -2,7 +2,7 @@
   font-family: 'Proxima Nova';
   src: url('/assets/fonts/ProximaNova-Regular.woff2') format('truetype');
 }
-  
+
 *,
 *::after,
 *::before {
@@ -12,17 +12,17 @@
   font-family: 'Proxima Nova', serif;
   color: #434b54;
 }
-  
+
 .splash-title,
 .heading {
   font-weight: bold;
   text-align: center;
 }
-  
+
 .blue-text {
   color: #3778c2;
 }
-  
+
 .splash-screen {
   min-height: 100vh;
   max-height: 100vh;
@@ -30,7 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-  
+
 .splash-screen h1 {
   flex-grow: 1;
   display: flex;
@@ -38,7 +38,7 @@
   justify-content: center;
   margin-top: 2rem;
 }
-  
+
 .splash-screen .links_buttons {
   flex-shrink: 0;
   display: flex;
@@ -47,20 +47,20 @@
   padding-bottom: 1rem;
   padding-top: 40px;
 }
-  
+
 .links_buttons form {
   width: 88%;
   margin: 0.2rem auto;
 }
-  
+
 .save_button {
   width: 90%;
 }
-  
+
 .link_button {
   width: 100%;
 }
-  
+
 .main-content {
   width: 100%;
   display: flex;
@@ -70,7 +70,7 @@
   padding: 2rem 0;
   margin-bottom: 3.5rem;
 }
-  
+
 .header {
   width: 100%;
   padding: 0.5rem;
@@ -80,14 +80,14 @@
   align-items: center;
   color: #fff;
 }
-  
+
 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-  
+
 .field {
   width: 90%;
   margin: 1rem 0;
@@ -95,24 +95,24 @@
   justify-content: center;
   align-items: center;
 }
-  
+
 .login {
   border: none;
   background-color: #3778c2;
   color: white;
 }
-  
+
 .cancel-center {
   margin-left: 5%;
   margin-right: auto;
 }
-  
+
 #hamburger-button {
   display: inline-block;
   cursor: pointer;
   padding: 1rem;
 }
-  
+
 .bar1,
 .bar2,
 .bar3 {
@@ -122,11 +122,11 @@
   margin: 6px 0;
   transition: 0.4s;
 }
-  
+
 .field input[type='file'] {
   margin-left: 5px; 
 }
-  
+
 #add-category,
 #add-expense {
   color: #fff;
@@ -134,7 +134,7 @@
   text-align: center;
   border: 1px solid #fff;
 }
-  
+
 .footer-button {
   width: 100%;
   background-color: #5fb523;
@@ -144,7 +144,7 @@
   display: flex;
   justify-content: center;
 }
-  
+
 .category-card {
   background-color: #f0f2f1;
   display: flex;
@@ -154,38 +154,38 @@
   margin: 1rem 0;
   text-decoration: none;
 }
-  
+
 .expense-card {
   background-color: #f0f2f1;
   width: 70%;
   padding: 2rem;
   margin: 1rem 0;
 }
-  
+
 .icon-container {
   width: 35%;
   height: auto;
   aspect-ratio: 1/1;
 }
-  
+
 .icon-container img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
-  
+
 .group-information {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-  
+
 .categories-check {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-  
+
 .notice {
   text-align: center;
   margin: 1rem 0;
