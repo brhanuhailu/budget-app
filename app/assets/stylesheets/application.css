@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Proxima Nova';
-    src: url('/assets/fonts/ProximaNova-Regular.woff2') format('truetype');
+  font-family: 'Proxima Nova';
+  src: url('/assets/fonts/ProximaNova-Regular.woff2') format('truetype');
   }
   
-  *,
-  *::after,
-  *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,17 +13,17 @@
     color: #434b54;
   }
   
-  .splash-title,
-  .heading {
+.splash-title,
+.heading {
     font-weight: bold;
     text-align: center;
   }
   
-  .blue-text {
+.blue-text {
     color: #3778c2;
   }
   
-  .splash-screen {
+.splash-screen {
     min-height: 100vh;
     max-height: 100vh;
     display: flex;
@@ -31,7 +31,7 @@
     justify-content: space-between;
   }
   
-  .splash-screen h1 {
+.splash-screen h1 {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
     margin-top: 2rem;
   }
   
-  .splash-screen .links_buttons {
+.splash-screen .links_buttons {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -48,20 +48,20 @@
     padding-top: 40px;
   }
   
-  .links_buttons form {
+.links_buttons form {
     width: 88%;
     margin: 0.2rem auto;
   }
   
-  .save_button {
+.save_button {
     width: 90%;
   }
   
-  .link_button {
+.link_button {
     width: 100%;
   }
   
-  .main-content {
+.main-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
     margin-bottom: 3.5rem;
   }
   
-  .header {
+.header {
     width: 100%;
     padding: 0.5rem;
     background-color: #3778c2;
@@ -81,14 +81,14 @@
     color: #fff;
   }
   
-  .form-container {
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  .field {
+.field {
     width: 90%;
     margin: 1rem 0;
     display: flex;
@@ -96,26 +96,26 @@
     align-items: center;
   }
   
-  .login {
+.login {
     border: none;
     background-color: #3778c2;
     color: white;
   }
   
-  .cancel-center {
+.cancel-center {
     margin-left: 5%;
     margin-right: auto;
   }
   
-  #hamburger-button {
+#hamburger-button {
     display: inline-block;
     cursor: pointer;
     padding: 1rem;
   }
   
-  .bar1,
-  .bar2,
-  .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #fff;
@@ -123,19 +123,19 @@
     transition: 0.4s;
   }
   
-  .field input[type='file'] {
+.field input[type='file'] {
     margin-left: 5px; /* Adjust the value as needed */
   }
   
-  #add-category,
-  #add-expense {
+#add-category,
+#add-expense {
     color: #fff;
     width: 80%;
     text-align: center;
     border: 1px solid #fff;
   }
   
-  .footer-button {
+.footer-button {
     width: 100%;
     background-color: #5fb523;
     position: fixed;
@@ -145,7 +145,7 @@
     justify-content: center;
   }
   
-  .category-card {
+.category-card {
     background-color: #f0f2f1;
     display: flex;
     width: 80%;
@@ -155,38 +155,38 @@
     text-decoration: none;
   }
   
-  .expense-card {
+.expense-card {
     background-color: #f0f2f1;
     width: 70%;
     padding: 2rem;
     margin: 1rem 0;
   }
   
-  .icon-container {
+.icon-container {
     width: 35%;
     height: auto;
     aspect-ratio: 1/1;
   }
   
-  .icon-container img {
+.icon-container img {
     width: 100%;
     height: 100%;
     object-fit: fill;
   }
   
-  .group-information {
+.group-information {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   
-  .categories-check {
+.categories-check {
     gap: 0.5rem;
     flex-wrap: wrap;
   }
   
-  .notice {
+.notice {
     text-align: center;
     margin: 1rem 0;
     color: #d13d3d;
