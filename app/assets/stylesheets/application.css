@@ -123,7 +123,7 @@
   transition: 0.4s;
 }
 
-.field input[type='file'] {
+.field input [type='file'] {
   margin-left: 5px; 
 }
 
@@ -185,7 +185,7 @@
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-
+  
 .notice {
   text-align: center;
   margin: 1rem 0;
