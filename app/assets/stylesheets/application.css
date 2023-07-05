@@ -124,7 +124,7 @@
 }
 
 .field input [type='file'] {
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 #add-category,
@@ -185,7 +185,7 @@
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-  
+
 .notice {
   text-align: center;
   margin: 1rem 0;
