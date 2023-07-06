@@ -1,34 +1,35 @@
-require 'spec_helper'
+require 'rails_helper'
 
-RSpec.describe 'categories/index.html.erb', type: :view do
-  let(:user) { create(:user) }
-  let!(:groups) { create_list(:group, 3, user:) }
-
-  before do
-    assign(:user, user)
-    assign(:groups, groups)
-    render
+RSpec.describe 'Categories visit index and new ', type: :feature do
+  include Devise::Test::IntegrationHelpers
+  include ActionView::Helpers::NumberHelper
+  before(:each) do
+    @user = User.create(email: 'user@example.com', password: 'password', name: 'user')
+    sign_in @user
+    @group = @user.my_groups.create(name: 'test', icon: 'icons8-logout-64.png')
+    @expense = @user.expenses.create(name: 'test', amount: 100)
+    @expense_group = ExpenseGroup.create(group_id: @group.id, expense_id: @expense.id)
+    @expense_sum = number_with_precision(@group.expenses.sum(:amount), precision: 2)
+    visit root_path
   end
 
-  it 'displays the categories header' do
-    expect(rendered).to have_content('CATEGORIES')
+  it 'should show list of categories' do
+    expect(page).to have_content("List of Categories of #{@user.name}")
+  end
+  it 'should show category data' do
+    expect(page).to have_content(@group.name)
+    expect(page).to have_content(@expense.created_at.strftime('%d %b %Y'))
+    expect(page).to have_content(@expense_sum)
+    image_name = File.basename(@group.icon, '.*')
+    expect(page).to have_css("img[src*=\"#{image_name}\"]")
   end
 
-  it 'displays the list of categories' do
-    expect(rendered).to have_selector('.category-card', count: 3)
-
-    groups.each do |group|
-      expect(rendered).to have_link(group.name, href: group_expenses_path(group))
-      expect(rendered).to have_content(group.created_at.strftime('%d %b %Y'))
-      expect(rendered).to have_content(number_to_currency(group.expenses.sum(:amount), precision: 2))
-    end
-
-    expect(rendered).to have_link('ADD CATEGORY', href: new_group_path)
-  end
-
-  it 'displays a message when no categories exist' do
-    assign(:groups, [])
-    render
-    expect(rendered).to have_content('No category exists')
+  it 'should redirect to add category and go back to index page' do
+    expect(page).to have_link('ADD CATEGORY')
+    click_link 'ADD CATEGORY'
+    expect(page).to have_current_path(new_group_path)
+    expect(page).to have_link(href: '/')
+    click_link href: '/'
+    expect(page).to have_current_path(groups_path)
   end
 end
