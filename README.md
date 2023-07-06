@@ -188,7 +188,8 @@ If you like this project give a ⭐️ and I are so excited to accept you feedba
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-i would like to thank Microverse
+i would like to thank Microverse and to [ Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for the original design Creative Commons license of the App.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
