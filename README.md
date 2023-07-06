@@ -67,15 +67,14 @@
 
 ## 🚀 Live Demo Link <a name="video-link"></a>
 
->  - [Live Demo Link]()
+>  - [Live Demo Link](https://brbudget.onrender.com/categories)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- Video Link -->
 
 ## 🚀 Video Link <a name="video-link"></a>
 
->  - [Video Link]()
-
+>  - [Video Link](https://www.loom.com/share/836d5cda3a1540828d2c9dbe6b0f9e3d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
